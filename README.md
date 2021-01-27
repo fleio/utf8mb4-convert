@@ -1,6 +1,6 @@
 # utf8mb4-convert
 
-Converts a MariaDB or MySQL database, its tables and its character fields to charset utf8mb4 and collection
+Converts a MariaDB or MySQL database, its tables and its character fields to charset utf8mb4 and collation
 utf8mb4_unicode_ci (usually from charset utf8 and collation utf8_general_ci).
 
 **Use at your own risk.**
