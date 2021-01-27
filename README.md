@@ -31,15 +31,21 @@ Example usage: convert.sh my_database --user=my_user --password=the_password
 See mysql documentation for more parameters.
 ```
 
+**Script expects the database name to be the first parameter.**
+
 Example:
 
 ```bash
 ./convert.sh databasename -h 127.0.0.1
 ```
 
+The script shows the generated convert query first. This way you can just copy/paste the query and run it manually
+yourself (instead of letting the script to run the query). Also asks for confirmation twice before actually messing with
+your data.
+
 ## License
 
-BSD License
+BSD 3-Clause License
 
 ## Thanks
 
