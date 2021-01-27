@@ -12,6 +12,13 @@ utf8mb4_unicode_ci (usually from charset utf8 and collation utf8_general_ci).
 
 ## Usage
 
+Save the script to your current path and give it execution rights:
+
+```bash
+curl -O https://raw.githubusercontent.com/fleio/utf8mb4-convert/main/convert.sh
+chmod +x convert.sh
+```
+
 ```
   convert.sh <database_name> [connection parameters ...]
 

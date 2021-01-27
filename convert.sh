@@ -7,6 +7,7 @@ show_help() {
 Converts databases from utf8 to utf8mb4, including all tables and fields.
 
   convert.sh <database_name> [connection parameters ...]
+
 All given parameters are directly given to the mysql command.
 Include the database name at the minimum, also any connection params, like user and password.
 Example usage: convert.sh my_database --user=my_user --password=the_password
