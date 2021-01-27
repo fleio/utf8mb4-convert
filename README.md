@@ -19,10 +19,13 @@ curl -O https://raw.githubusercontent.com/fleio/utf8mb4-convert/main/convert.sh
 chmod +x convert.sh
 ```
 
+Running `./convert.sh` script without arguments shows help text:
+
 ```
   convert.sh <database_name> [connection parameters ...]
 
-All given parameters are directly given to the mysql command.
+All given parameters are directly given to the mysql command and our convert query is piped to this command.
+
 Include the database name at the minimum, also any connection params, like user and password.
 Example usage: convert.sh my_database --user=my_user --password=the_password
 See mysql documentation for more parameters.
