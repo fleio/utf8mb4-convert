@@ -59,7 +59,8 @@ FROM `COLUMNS` INNER JOIN `TABLES` ON `TABLES`.table_name = `COLUMNS`.table_name
   echo ""
   echo -n "  Continue showing the queries? [y/N] "
   confirm_continuation
-  generated_queries="$(echo "$query_generator" | mysql $* | tail -n +2)"
+  output="$(echo "$query_generator" | mysql $*)"
+  generated_queries="$(echo "$output" | tail -n +2)"
   generated_queries="SET foreign_key_checks = 0;
 $generated_queries
 SET foreign_key_checks = 1;"
